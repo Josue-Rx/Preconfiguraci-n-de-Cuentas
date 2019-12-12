@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+
+html, body {
+	height: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column; 
+}
+
+.fondo {
+	background: #DADCDF;
+	height: 1000px;
+}
+
+.divPrincipal {
+	background-color:#DADCDF; 
+	width:100%; 
+	display: flex;
+}
+
+
+.inputName {
+	background-color: #E8E8E8;
+	height: 39px;
+	padding: 6px 6px 6px 6px;
+	border: 0.4px solid #ccc;
+	color: #444;
+	border-radius: 9px;
+	overflow: hidden;
+	width: 405px;
+	border-radius: 9px;
+}
+
+/* SCROLL 1 INPUT */
+.fondoInput {
+	 background-color: #FAFAFA;
+	 height: 1000px;
+	 width: 500px;
+	 /*border-radius: 10px 0 0 10px;*/
+	 overflow: auto;
+	 
+    }
+
+.fondoInput::-webkit-scrollbar {
+	width: 6px;
+}
+
+.fondoInput::-webkit-scrollbar-thumb {
+	background: #727272;
+}
+
+
+.btn1 {
+	padding: 0px 3px;
+	margin: 0 20px;
+	background-color: #fff;
+	border: none;
+	font-size: 15px;
+	color: #848484;
+ }
+
+ .btn1:hover {
+ 	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #555555;
+ }
+
+
+.btn2 {  
+  background-color: #68D12C;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  padding: 5px 30px;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.btn2:hover {
+	background-color: #6ACA34;
+}
+
+/* DIV DERECHA */
+
+.fondoDescri {
+	 background-color: #0575E6;
+	 /*border-radius: 0px 10px 10px 0px;*/
+	 height:1000px;
+	 color: #fff;
+	 background: -webkit-linear-gradient(to left, #1030A8, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+	 background: linear-gradient(to left, #1030A8, #0575E6);
+	 position: relative;
+	}
+
+.image1 {
+	position: absolute;
+	top: 370px;
+	left:465px;
+	width:270px;
+
+}
+
+.image2 {
+	position: absolute;
+	width:160px;
+	top: 440px;
+	left: 130px;
+}
+
+.image3 {
+	position: absolute;
+	width: 130px;
+	left: 25px;
+	top: 350px;
+}
+
+.image4 {
+	position: absolute;
+	width: 170px;
+	left: 90px;
+	top: 240px;
+}
+
+.div {
+	position: absolute;
+	width: 350px;
+	height: 390px;
+	top: 23px;
+	left: 340px;
+	color: #444;
+	color: #fff;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 25px;
+}
+
+.info {
+	padding: 5px;
+}

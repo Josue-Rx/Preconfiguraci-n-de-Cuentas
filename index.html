@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Accounts</title>
+
+	<!--Archivo Js y Angular.min-->
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/chosen.jquery.js"></script>
+	<script src="js/ImageSelect.jquery.js"></script>
+	<script src="js/lib/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	
+
+	<!-- Angular Material requires Angular.js Libraries -->
+	  
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-animate.min.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-aria.min.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-messages.min.js"></script>
+
+	<!-- Angular Material Library -->
+ 	 <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>
+
+ 	<!-- Angular Material style sheet -->
+  	 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+
+  	<!--CSS Styles--> 
+  	<link rel="stylesheet" href="css/chosen.css"> 
+	<link rel="stylesheet" href="css/ImageSelect.css">
+	<link rel="stylesheet" href="css/estilos.css">	
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!--Google Fonts-->
+	 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+	 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<!--Font Awesome-->
+	 <link rel="stylesheet" href="fontAwesome/css/all.min.css">
+
+</head>
+<body class="fondo" ng-controller="mainCtrl">
+		<div class="divPrincipal" layout="row">
+
+				<div flex="none" class="fondoInput">
+
+				<div flex="75" style="margin: auto;"> <br>
+
+					<h6 style="color: #ADADAD;" >Welcome Luis</h6> <br>					
+					<h2>Tell us a bit about yourself</h2> <br>
+
+						<form name="myForm">
+							<div>
+								<label>Name of your Company</label> <br>
+								<input type="text" name="myName"  class="inputName" ng-model="nombre" flex="100" required>	
+							</div>
+							<br>	
+							<div ng-show="myForm.myName.$valid">
+								<label>¿Type of Industry?</label>
+								<select class="my-select" flex="100" name="myCompany" ng-model="turnCompany">
+									<option value="">Select</option>
+									<option value="" data-img-src="img/grua.png">Construction</option>
+									<option value="" data-img-src="img/education.png">Education</option>
+									<option value="" data-img-src="img/algo.png">Technology</option>
+									<option value="" data-img-src="img/manu.png">Manufacture</option>
+									<option value="" data-img-src="img/transport.png">Transport</option>
+									<option value="" data-img-src="img/money.png">Finance</option>
+									<option value="" data-img-src="img/gover.png">Government</option>
+									<option value="" data-img-src="img/salud.png">Healthiness</option>
+									<option value="" data-img-src="img/turi.png">Tourism</option>
+									<option value="" data-img-src="img/legal.png">Legal Service</option>
+									<option value="" data-img-src="img/marke.png">Marketing</option>
+									<option value="" data-img-src="img/otro.png">Other</option>
+								</select>
+							</div>
+							
+							<br>
+							<div ng-show="myForm.myCompany.$dirty">
+
+								<label>¿What is your role in the company?</label>
+								<select class="my-select" flex="100" ng-model="rolCompany" name="rolesCompany">
+									<option value="">Select</option>
+									<option value="" data-img-src="img/compras.png">Shopping</option>
+									<option value="" data-img-src="img/dolar.png">Finance</option>
+									<option value="" data-img-src="img/ope.png">Operations</option>
+									<option value="" data-img-src="img/otro.png">Other</option>
+
+								</select>
+
+							</div>
+							
+							<br>
+							<div ng-show="myForm.rolesCompany.$dirty">
+								<label for="">¿How many employees are in your company?</label>
+								<select class="my-select" flex="100" ng-model="employeesCompany">
+									<option value="">Select</option>
+									<option value="">1-10</option>
+									<option value="">11-50</option>
+									<option value="">51-100</option>
+									<option value="">101-250</option>
+									<option value="">251-500</option>
+									<option value="">501-1000</option>
+									<option value="">1001-4000</option>
+									<option value="">4000 +</option>
+									
+								</select>	
+							</div>
+							<br><br>
+							<div align="right">
+								<button class="btn1">Skip</button>
+								<button class="btn2">Continue</button>
+							</div>
+						</form>
+					</div>
+				</div>
+   
+				<div flex="" class="fondoDescri" >	
+					<div class="div">
+						<p><img src="img/yei.png" width="30px" class="info">Simplify your purchases</p>
+						<p><img src="img/yei.png" width="30px" class="info">Organize your payments</p>
+						<p><img src="img/yei.png" width="30px" class="info">Generate accounting reports</p>
+						<p><img src="img/yei.png" width="30px" class="info">Centralize suppliers</p>
+						<p><img src="img/yei.png" width="30px" class="info">Monitor in real time</p>
+						<p><img src="img/yei.png" width="30px" class="info">Control expenses</p>
+					</div>
+					<img src="img/mono.png" class="image1">
+					<img src="img/cajas.png" class="image2">
+					<img src="img/tarjeta.png" class="image3">
+					<img src="img/factura.png" class="image4">
+
+				</div>
+		</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
